@@ -729,31 +729,34 @@ button { cursor: none; }
   line-height: 1.75;
 }
 
-.about-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+.about-profile-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
   margin-top: 1rem;
 }
 
-.about-detail-item {
-  padding: 0.7rem 0.8rem;
-  border: 1px solid var(--border-glow);
-  border-radius: 10px;
-  background: rgba(99, 179, 237, 0.05);
+.about-profile-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(99, 179, 237, 0.2);
 }
 
-.about-detail-label {
-  display: block;
-  font-size: 0.72rem;
+.about-profile-row:last-child {
+  border-bottom: none;
+}
+
+.about-profile-label {
+  font-size: 0.76rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent-1);
-  margin-bottom: 0.25rem;
   font-weight: 700;
 }
 
-.about-detail-item span:last-child {
+.about-profile-row span:last-child {
   color: var(--text-secondary);
   font-size: 0.9rem;
 }
