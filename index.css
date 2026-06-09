@@ -723,6 +723,28 @@ button { cursor: none; }
   margin-bottom: 0.75rem;
 }
 
+.about-profile-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-profile-visual {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-glow);
+  margin-bottom: 1rem;
+  background: rgba(99, 179, 237, 0.08);
+}
+
+.about-profile-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .about-card p {
   color: var(--text-secondary);
   font-size: 0.95rem;
