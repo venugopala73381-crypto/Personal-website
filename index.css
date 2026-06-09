@@ -691,7 +691,7 @@ button { cursor: none; }
 /* ── About ────────────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   gap: 1.5rem;
 }
 
@@ -723,28 +723,6 @@ button { cursor: none; }
   margin-bottom: 0.75rem;
 }
 
-.about-profile-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-profile-visual {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid var(--border-glow);
-  margin-bottom: 1rem;
-  background: rgba(99, 179, 237, 0.08);
-}
-
-.about-profile-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .about-card p {
   color: var(--text-secondary);
   font-size: 0.95rem;
@@ -754,7 +732,7 @@ button { cursor: none; }
 .about-profile-summary {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.65rem;
   margin-top: 1rem;
 }
 
@@ -762,7 +740,7 @@ button { cursor: none; }
   display: grid;
   grid-template-columns: 110px 1fr;
   gap: 0.75rem;
-  padding: 0.6rem 0;
+  padding: 0.65rem 0;
   border-bottom: 1px solid rgba(99, 179, 237, 0.2);
 }
 
@@ -772,53 +750,15 @@ button { cursor: none; }
 
 .about-profile-label {
   font-size: 0.76rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--accent-1);
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-1);
 }
 
 .about-profile-row span:last-child {
   color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-.about-card h4 {
   font-size: 0.92rem;
-  color: var(--accent-1);
-  font-weight: 600;
-  margin: 0 0 0.4rem;
-}
-
-.about-list-group {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin-top: 0.2rem;
-}
-
-.about-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.about-list li {
-  position: relative;
-  padding-left: 0.95rem;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.45;
-}
-
-.about-list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--accent-2);
 }
 
 .about-card-wide {
@@ -1532,9 +1472,6 @@ svg defs { display: none; }
 }
 
 @media (max-width: 768px) {
-  .about-list-group {
-    grid-template-columns: 1fr;
-  }
   .nav-links {
     position: fixed;
     top: var(--nav-h);
